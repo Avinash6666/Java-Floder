@@ -1,0 +1,92 @@
+                                            Adv.java Class Notes                       
+                                         =========================
+--> Similarly we need to run an web application we need on server.
+-->They are diff servers are there in market. For Example
+        apache tomcat
+        glassfish
+        web sphere
+        web logic
+
+--> web.xml is called as deployment descriptor
+
+--> If you want to run an application we have to select Run on server
+
+--> If you want to excute a server on bowser we have to now the port name Or IP address--> this is the ip Address(http://localhost:8080/FirstwebApplcation/index.html)
+
+* Diff b/w web Application & standalone java program in that, javaSE is used to Write the core java program which has the main method, but in web Application
+   there is no main method. JavaEE is used to create the web based Application
+
+* If you want to bulid a Web Application we need one software that is eclipse
+
+* While downloading eclipse we need to select java EE to build Web Application 
+
+* In order to work or create the web Application we need to download one server 
+
+* After install server we need to go server window, select new server, select the apachetomcat 8.5 or any update version and click on download & install option
+
+* Once it install click on the check box for generating the web.xml
+
+* In order to create web Application select the -> Dynamic web Module-> & enter the project Name
+
+* When we are going to create a new package we have to select src (click on right button & select package option)
+
+* After create package we need to create class.  Right Click on that package and go to others option & select it 
+   After selecting that we need to select server option and create a class
+
+* When we are going to create a new servlet automatically in web.xml create a new servlet
+   for exp: We create a new package like com.ashokit.firstweb
+            in that we create a one class like FirstServer
+			in that like below code automatically it create in web.xml
+			<servlet>
+		<servlet-name>FirstServlet</servlet-name>
+		<display-name>FirstServlet</display-name>
+		<description></description>
+		<servlet-class>com.ashokit.firstweb.FirstServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FirstServlet</servlet-name>
+		<url-pattern>/FirstServlet</url-pattern>
+	</servlet-mapping>
+	
+* When we are going to access the firstservlet we need to access the url of firstservelt
+  if we want display in cmd we need to write the sopln
+  if we want to display on bowser we need o write the code 
+     printwriter writer = respone.getwriter();
+	 writer.write("hi this is secondservlet")   (Or) response.getWriter().append("Served at: ").append(request.getContextPath());
+	 if we want to access doget() or dopost() we have one shortcut form (ctrl+space)
+	if we want to access a servlet on bower with heilp this code we can acccess(http://localhost:8080/FirstwebApplcation/FirstServlet?userName=%22123%22&password=%22sdf%22)
+if you want to open any floder in elipse we have one shortcut key (crt+shift+h)
+
+* if we want change the servlet name we can change no issue will happen automatically it will access
+
+* We can deploy multiple servers in one Application
+
+* If you want to implement or extend a sever we must import the server with the help of (ctrl+shift+o) then only add unimplementation will be visable
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Q) What Is a Servlet?
+A) A servlet is a Java programming language class that is used to extend the capabilities of servers that 
+   host applications accessed by means of a request-response programming model
+-------------------------------------------------------------------------------------------------------------------------------------------
+Q) Servlet Life Cycle
+A) The life cycle of a servlet is controlled by the container in which the servlet has been deployed. When a request is mapped to a servlet, the container performs the following steps.
+
+   1)If an instance of the servlet does not exist, the web container
+
+	a)Loads the servlet class.
+
+	b)Creates an instance of the servlet class.
+
+	c)Initializes the servlet instance by calling the init method. Initialization is covered in Initializing a Servlet.
+
+   2)Invokes the service method, passing request and response objects. Service methods are discussed in Writing Service Methods.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q) What is JSP and why it is used?
+A) It stands for Java Server Pages.It is used for creating web application.It is used to create dynamic web content. 
+   In this JSP tags are used to insert JAVA code into HTML pages.It is an advanced version of Servlet Technology.
+   It is a Web based technology helps us to create dynamic and platform independent web pages. The JSP engine compiles the servlet into an executable class
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q) How many implicit objects are there in JSP?
+A) 9 jsp implicit objects
+   There are 9 jsp implicit objects. These objects are created by the web container that are available to all the jsp pages. 
+   The available implicit objects are out, request, config, session, application etc.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------   

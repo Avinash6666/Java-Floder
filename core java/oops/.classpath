@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="13-04-21/|oops/|04-05-21/|01-05-21/|17-04-21/|3-08-21/|21-04-21/|16-04-21/|23-04-21/|20-04-21/|16-06-21/|28-06-21/|24-04-21/|19-04-21/" kind="src" path=""/>
+	<classpathentry kind="src" path="01-05-21"/>
+	<classpathentry kind="src" path="04-05-21"/>
+	<classpathentry kind="src" path="13-04-21"/>
+	<classpathentry kind="src" path="16-04-21"/>
+	<classpathentry kind="src" path="16-06-21"/>
+	<classpathentry kind="src" path="17-04-21"/>
+	<classpathentry kind="src" path="19-04-21"/>
+	<classpathentry kind="src" path="20-04-21"/>
+	<classpathentry kind="src" path="21-04-21"/>
+	<classpathentry kind="src" path="23-04-21"/>
+	<classpathentry kind="src" path="24-04-21"/>
+	<classpathentry kind="src" path="28-06-21"/>
+	<classpathentry kind="src" path="3-08-21"/>
+	<classpathentry kind="src" path="oops"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="oops"/>
+</classpath>

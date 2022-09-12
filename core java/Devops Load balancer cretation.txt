@@ -1,0 +1,23 @@
+#! /bin/bash
+sudo su
+yum install httpd -y
+cd /var/www/html
+echo "<html><h1>Medical Insurance Server -1</h1></html>" > index.html
+service httpd start
+
+Medical Instance-2
+
+Create Medical targate using above 2 inastane (Medical-Group)
+
+
+#! /bin/bash
+sudo su
+yum install httpd -y
+cd /var/www/html
+echo "<html><h1>Life Insurance Server -1</h1></html>" > index.html
+service httpd start
+
+Life Instance-2
+
+Create Life-targate using above 2 instance (Life-Group)
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.2//EN" "http://java.sun.com/j2ee/dtds/web-app_2_2.dtd">
+<web-app id="WebApp_ID">
+	<display-name>FirstwebApplications</display-name>
+	<servlet>
+		<servlet-name>Firstservlet</servlet-name>
+		<display-name>Firstservlet</display-name>
+		<description></description>
+		<servlet-class>com.ashokit.Servlet.FirstServlet</servlet-class>
+	</servlet>
+		<servlet-name>Firstservlet</servlet-name>
+		<url-pattern>/Firstservlet</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>
